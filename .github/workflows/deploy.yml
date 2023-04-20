@@ -1,4 +1,4 @@
-name: Push Documentation to Website
+name: Trigger Netlify build
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  trigger-deploy:
-    name: Trigger Deploy
+  trigger_netlify_build:
+    runs-on: ubuntu-latest
     steps:
-      -run: -X POST -d {} https://api.netlify.com/build_hooks/64402bbf2deec60067430897
+      - name: Send build hook
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/64402bbf2deec60067430897
