@@ -83,6 +83,7 @@ Command Line
 Resources Directory
 
 Menu
+%Image Test
 
 Toolbar
 %Introduction to the Toolbar
