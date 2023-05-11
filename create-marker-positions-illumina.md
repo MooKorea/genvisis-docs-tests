@@ -1,4 +1,4 @@
-## Create Marker Positions (Illumina)
+## Create Marker Positions
 This step uses an Illumina manifest file to determine where probes lie in the genome.
 
 #### 1: An Illumina Manifest file
